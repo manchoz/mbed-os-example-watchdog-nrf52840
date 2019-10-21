@@ -1,0 +1,13 @@
+{
+    "macros": [
+        "NRFX_WDT_ENABLED=1"
+    ],
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200
+        },
+        "NRF52840_MDK": {
+            "target.device_has_add": ["WATCHDOG"]
+        }
+    }
+}
